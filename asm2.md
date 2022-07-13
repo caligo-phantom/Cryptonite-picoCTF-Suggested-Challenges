@@ -7,10 +7,10 @@ What does asm2(0x4,0x2d) return? Submit the flag as a hexadecimal value (startin
 ```
 asm2:
 	<+0>:	push   ebp
-	<+1>:	mov    ebp,esp                        ; ebp = esp
-	<+3>:	sub    esp,0x10                       ; esp - 16
-	<+6>:	mov    eax,DWORD PTR [ebp+0xc]        ; eax = 45
-	<+9>:	mov    DWORD PTR [ebp-0x4],eax        ; var1 = 45
+	<+1>:	mov    ebp,esp                      ; ebp = esp
+	<+3>:	sub    esp,0x10                     ; esp - 16
+	<+6>:	mov    eax,DWORD PTR [ebp+0xc]      ; eax = 45
+	<+9>:	mov    DWORD PTR [ebp-0x4],eax      ; var1 = 45
 	<+12>:	mov    eax,DWORD PTR [ebp+0x8]      ; eax = 4
 	<+15>:	mov    DWORD PTR [ebp-0x8],eax      ; var2 = 4
 	<+18>:	jmp    0x50c <asm2+31>              ; unconditional jmp
