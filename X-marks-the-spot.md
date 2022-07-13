@@ -5,7 +5,7 @@ Web Exploitation
 Another login you have to bypass. Maybe you can find an injection that works? http://mercury.picoctf.net:20297/
 ## Approach
 This is an XPATH injection. If an always true value is input in place of username a message pops up "You're on the right path.".<br>
-Here we can use "starts-wth()" operator which returns true if the passed characters are at the beginning of a document.
+Here we can use "starts-with()" operator which returns true if the passed characters are at the beginning of a document.
 ```python
 import requests
 from string import *
